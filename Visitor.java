@@ -41,7 +41,7 @@ public class Visitor extends labBaseVisitor<Void> {
 
     @Override
     public Void visitStmt(labParser.StmtContext ctx) {
-        System.out.print("    ret ");
+        System.out.print("    ret i32 ");
         visit(ctx.exp());
         System.out.println(s);
         return null;
